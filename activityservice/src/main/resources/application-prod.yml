@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: activityservice
+
+  data:
+    mongodb:
+      uri: ${ACTIVITY_MONGODB_URI}
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
